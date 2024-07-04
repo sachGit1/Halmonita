@@ -1,0 +1,107 @@
+
+<DOCTYPE html!>
+<html>
+
+<head>
+<link rel="stylesheet" href="Reservation_Styles.css">
+</head>
+
+<body>
+
+<div class="title">Book a table at <b><i>Halmonita Rice Grande</i></b></div><br/>
+<fieldset class="border">
+
+<form action="http://localhost/dataa.php " method="post">
+
+<center><h3>Reservation Details</h3></center>
+<table border="0" class="table">
+
+<tr>
+<td class="description">People </td>
+<td><select name="people" class="dropDown" required>
+<option value="1 people" selected="selected">1 people</option>
+<option value="2 people">2 people</option>
+<option value="3 people">3 people</option>
+<option value="4 people">4 people</option>
+<option value="5 people">5 people</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td class="description">Date </td>
+<td><input type="date" id="date_" name="date_" class="dropDown" required/></td>
+</tr>
+
+<tr>
+<td class="description">Time</td>
+<td>
+<select name="time_"  class="dropDown" required>
+<option value="18:00 Hours" selected="selected">18:00 Hours  UNTIL 20:45</option>
+<option value="18:15 Hours">18:15 Hours  UNTIL 21:00</option>
+<option value="18:30 Hours">18:30 Hours  UNTIL 21:15</option>
+<option value="18:45 Hours">18:45 Hours  UNTIL 21:30</option>
+<option value="19:00 Hours">19:00 Hours  UNTIL 21:45</option>
+<option value="19:15 Hours">19:15 Hours  UNTIL 22:00</option>
+<option value="19:30 Hours">19:30 Hours  UNTIL 22:00</option>
+<option value="19:45 Hours">19:45 Hours  UNTIL 22:00</option>
+<option value="20:00 Hours">20:00 Hours  UNTIL 22:00</option>
+</select>
+</td>
+</tr>
+
+</table>
+<br/>
+<hr>
+
+<center><h3>Your Contact Details</h3>
+<p>You will receive a confirmation of your reservation by email.</p></center>
+
+<table border="0" class="table">
+<tr>
+<td>
+<input type="radio" name="gender" id="gender"/>Mr.
+<input type="radio" name="gender" id="gender"/>Ms.
+</td>
+<td></td>
+</tr>
+
+<tr>
+<td>First Name  </td>
+<td><input type="text" name="firstname" id="firstname" placeholder="First name" required/></td>
+</tr>
+
+<tr>
+<td>Last Name  </td>
+<td><input type="text" name="lastname" id="lastname" placeholder="Last name" required/><br/></td>
+</tr>
+
+<tr>
+<td>E-mail </td>
+<td><input type="email" name="email" id="email" placeholder="Email" required/></td>
+</tr>
+
+<tr>
+<td class="description">Phone Number </td>
+<td><input type="tel" name="phone" id="phone" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{7}" required/></td>
+</tr>
+
+<tr>
+<td class="description">Important Requests</td>
+<td><textarea cols="35" rows="3"id="remark" name="remark" placeholder="Do you have important dietary requirements, allergies or other remarks?"></textarea></td>
+</tr>
+
+</table>
+<br/>
+<br/>
+
+<center><input type="submit" value="BOOK NOW"/></center>
+</form>
+</fieldset>
+
+</body>
+
+
+
+
+</html>

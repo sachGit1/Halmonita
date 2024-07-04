@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* CSS Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: -60px; /* Initially hidden above the viewport */
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            transition: top 0.3s ease; /* Add animation */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="C:\Users\User\OneDrive\Pictures\Saved Pictures\facb73458fcc06c5faf9a1c192d10fa0.jpg" width="100%" height="100%">
+    </section>
+
+    <section id="about">
+       <img src="C:\Users\User\OneDrive\Pictures\Saved Pictures\facb73458fcc06c5faf9a1c192d10fa0.jpg" width="100%" height="100%">
+    </section>
+
+    <section id="services">
+       <img src="C:\Users\User\OneDrive\Pictures\Saved Pictures\facb73458fcc06c5faf9a1c192d10fa0.jpg" width="100%" height="100%">
+    </section>
+
+    <section id="contact">
+        <img src="C:\Users\User\OneDrive\Pictures\Saved Pictures\facb73458fcc06c5faf9a1c192d10fa0.jpg" width="100%" height="100%">
+    </section>
+
+    <script>
+        // JavaScript for Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+        
+                const targetId = this.getAttribute('href').substring(1);
+                const targetSection = document.getElementById(targetId);
+        
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // JavaScript for Menu Bar Animation
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector("header");
+            const homeSection = document.querySelector("#home");
+        
+            if (window.pageYOffset > homeSection.offsetHeight) {
+                header.style.top = "0";
+            } else {
+                header.style.top = "-60px"; // Hide the menu bar above the viewport
+            }
+        });
+    </script>
+</body>
+</html>

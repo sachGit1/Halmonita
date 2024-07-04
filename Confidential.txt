@@ -1,0 +1,40 @@
+<header>
+        <div class="navbar1">
+        <div class="nav-btn" id="bread">BREAD</div>
+        <div class="nav-btn" id="vegi">VEGETABLES + CHEESE</div>
+        <div class="nav-btn" id="fish">FISH</div>
+        <div class="nav-btn" id="meat">MEAT</div>
+        <div class="nav-btn" id="dessert">DESSERT</div>
+        </div></header>
+        <div class="content1"><p id="contentText">saaas</p></div>
+        
+        <script>
+        const bread=document.getElementById("bread");
+        const vegi=document.getElementById("vegi");
+        const fish=document.getElementById("fish");
+        const meat=document.getElementById("meat");
+        const dessert=document.getElementById("dessert");
+        var contentText=document.getElementById("contentText");
+
+        bread.addEventListener("click",()=>{
+        contentText.innerHTML ="<p><h1>Bread Menu</h1><b>PAN DE AJO</b><br>Grilled bread with garlic oil<br><br><b>PAN CON TOMATE</b><br>Grilled bread with homemade tomato salsa<br><br><b>PAN DE AJO</b><br>Grilled bread with garlic oil<br><br><b>PAN CON TOMATE</b><br>Grilled bread with homemade tomato salsa<br><br><b>PAN CON ALIOLI</b><br>Bread with alioli<br><b>PAN CON ALIOLI</b><br>Bread with alioli<br><b>PAN DE AJO</b><br>Grilled bread with garlic oil<br><br><b>PAN CON TOMATE</b><br>Grilled bread with homemade tomato salsa<br><br>br>Grilled bread with homemade tomato salsa</p>";
+        });
+
+        vegi.addEventListener("click",()=>{
+        contentText.innerHTML ="<p>vegiiii</p>";
+        });
+
+        fish.addEventListener("click",()=>{
+        contentText.innerHTML ="<p>fishyyy</p>";
+        });
+
+        meat.addEventListener("click",()=>{
+        contentText.innerHTML ="<p>meatyy</p>";
+        });
+
+        dessert.addEventListener("click",()=>{
+        contentText.innerHTML ="<p>dessertyyy</p>";
+        });
+
+
+        </script>

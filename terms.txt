@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>Terms & Conditions</title>
+<style>
+h1.header
+{
+margin-top:30px;
+background-color:black;
+color:white;
+padding:5px;
+border-radius:10px;
+}
+</style>
+</head>
+
+<body>
+
+<h1 class="header" align = "center">Halmonita Rice Grande Gift Voucher Terms and Conditions</h1>
+
+
+<h3>General</h3>
+
+1.1. These terms and conditions apply to gift vouchers issued by Halmonita Rice Grande and purchased by customers.<br>
+
+1.2. By purchasing, using, or accepting a gift voucher, you agree to be bound by these Terms. Please read them carefully.<br>
+
+<h3>Voucher Redemption</h3>
+
+2.1. Gift vouchers are redeemable at Halmonita Rice Grande for goods and services as specified on the voucher.<br>
+
+2.2. Gift vouchers may not be exchanged for cash or other forms of payment.<br>
+
+2.3. Lost, stolen, or damaged gift vouchers will not be replaced or refunded.<br>
+
+<h3>Expiry Date</h3>
+
+3.1. Gift vouchers have an expiry date as indicated on the voucher.<br>
+
+3.2. After the expiry date, the voucher is considered null and void, and no value will be refunded.<br>
+
+<h3>Reservations</h3>
+
+4.1. Reservations are recommended for dining at Halmonita Rice Grande.<br>
+
+4.2. The use of gift vouchers for reservations is subject to availability.<br>
+
+<h3>Applicability</h3>
+
+5.1. These Terms apply to all gift vouchers issued by Halmonita Rice Grande, whether purchased directly from the Restaurant or through authorized partners.<br>
+
+<h3>Modification and Termination</h3>
+
+6.1. Halmonita Rice Grande reserves the right to modify these Terms at any time without prior notice.<br>
+
+6.2. Halmonita Rice Grande may terminate or discontinue the gift voucher program at its discretion.<br>
+
+<h3>Limitation of Liability</h3>
+
+7.1. Halmonita Rice Grande is not responsible for lost, stolen, or unauthorized use of gift vouchers.<br>
+
+7.2. Halmonita Rice Grande shall not be liable for any defects, disputes, or discrepancies related to goods or services purchased using gift vouchers.<br>
+
+<h3>Privacy</h3>
+
+8.1. Personal information provided during the purchase of gift vouchers will be handled in accordance with Halmonita Rice Grande's privacy policy.<br>
+
+<h3>Governing Law</h3>
+
+9.1. These Terms are governed by and construed in accordance with the laws of Act No.26 of 1980.<br>
+
+9.2. Any disputes arising from or related to these Terms shall be subject to the exclusive jurisdiction of the courts in Act No.26 of 1980.<br>
+
+<h3>Contact Details</h3>
+
+If you have questions or are not satisfied with Halmonita Rice Grande, you can contact us directly using the details below.<br>
+
+<br>
+
+<b>Halmonita Rice Grande</b><br>
+Rechstraat 53<br>
+5342SN Haastrichte<br>
+info@halmonitarg.it<br>
++32 (0)42 553 7788
+
+
+</body>
+</html>
