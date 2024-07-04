@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Reservations</title>
+<style type="text/css">
+
+  .deco
+    {
+       padding:5px 20px;
+       background:#fff;
+       border:2px solid black;
+       outline:none;
+       cursor:pointer;
+       font-size:16px;
+       font-weight:bold;
+       border-radius:30px;
+    }
+
+   input#color:hover
+     {
+        background-color:mediumvioletred;
+        color:black;
+        transform:scale(1.15);
+     }
+
+    .font
+       {
+          font-family:arial;
+          font-size:16px;
+          display:inline;
+          color:black;
+align:left;
+       }
+
+     .weight
+        {
+           font-weight:bold;
+        }
+
+     p.style
+        {
+           font-color:orange;
+           display:inline;
+           font-size:20px;
+           font-weight:bold;
+           
+        }
+
+     .background
+        {
+          background-image:url('IMG-20230929-WA0019.jpg');
+          background-repeat:no-repeat;
+          background-size:cover;
+        }
+
+      .transbox
+         {
+           background-color:rgb(230,230,250,0.9);
+           padding:10px;
+           border-radius:10px;
+           width:60%;
+           height:auto;
+           margin: 0 auto;
+           color:black;
+           font-size:20px;
+           }
+
+.padding{padding-top:10px;}
+
+  div.gift1{
+           width:auto;
+           height:auto;
+           background-color:rgb(192,192,192,0.5);
+           font-family:Candara;
+           padding:20px;
+           margin-bottom:10px;
+           border-radius:5px;
+           color:black;
+           font-size:25px;
+           }
+
+</style>
+</head>
+
+<body class="background" align="center">
+
+<h6 class="padding">RESERVATIONS</h6>
+
+<div class="transbox">
+
+<div class="gift1"><b>Welcome to Halmonita Rice Grande</b></div>
+<p class="style">Booking Details</p><br/><br/>
+<form action="http://localhost/database_booking.php " method="post">
+<table align="center" border="0">
+<tr>
+<td class="font">People</td>
+<td><select name="people" class="weight" required>
+<option value="1 people" selected="selected">1 Person</option>
+<option value="2 people">2 People</option>
+<option value="3 people">3 People</option>
+<option value="4 people">4 People</option>
+<option value="5 people">5 People</option>
+</select></td>
+</tr>
+<tr>
+<td class="font">Date</td>
+<td><input type="date" id="date_" name="date_" class="weight" required/></td>
+</tr>
+<tr>
+<td class="font">Time</td>
+<td><select name="time_"  class="weight" required>
+<option value="18:00 Hours" selected="selected">18:00h UNTIL 20:45h</option>
+<option value="18:15 Hours">18:15h UNTIL 21:00h</option>
+<option value="18:30 Hours">18:30h UNTIL 21:15h</option>
+<option value="18:45 Hours">18:45h UNTIL 21:30h</option>
+<option value="19:00 Hours">19:00h UNTIL 21:45h</option>
+<option value="19:15 Hours">19:15h UNTIL 22:00h</option>
+<option value="19:30 Hours">19:30h UNTIL 22:00h</option>
+<option value="19:45 Hours">19:45h UNTIL 22:00h</option>
+<option value="20:00 Hours">20:00h UNTIL 22:00h</option>
+</select></td>
+</tr>
+</table>
+<br/><p class="style">Your Contact Details</p><br/><br/>
+
+<input type="radio" name="gender" value = "Mr." id="male"/><p class="font">Mr.</p>
+<input type="radio" name="gender" value = "Ms." id="female"/><p class="font">Ms.</p><br/><br/>
+
+<input type="text" name="firstname" id="firstname" placeholder="First name" class="font" required/>
+<br/><br/>
+
+<input type="text" name="lastname" id="lastname" placeholder="Last name"  class="font" required/>
+<br/><br/>
+
+<input type="email" name="email" id="email" placeholder="Email" class="font" required/>
+<br/><br/>
+
+<input type="tel" name="phone" id="phone" placeholder="Phone number" pattern="[0-9]{3}[0-9]{7}" class="font" required/>
+<br/><br/>
+
+<textarea cols="70" rows="8"id="remark" name="remark" placeholder="Do you have important dietary requirements, allergies or other remarks?" class="font"></textarea>
+<br/><br/><br/>
+
+<input type="submit" class="deco" id="color" value="Book Now"/>
+</form>
+
+</div>
+</body>
+</html>

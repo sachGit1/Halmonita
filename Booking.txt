@@ -1,0 +1,87 @@
+<html>
+<head><title>Your Recipt</title>
+</head>
+
+<body align="left">
+<?php
+
+
+//create connection
+$con=mysqli_connect("localhost","root","","Restaurant");
+
+// Check connection
+if (!$con)
+{
+  die("Connection failed: " . mysqli_connect_error());
+}
+echo "";
+
+$sql = "INSERT INTO bookings (CivilState,FirstName,LastName,Email,PhoneNumber,Remark,NumberOfPeople,Date,Time)
+VALUES
+('$_POST[gender]','$_POST[firstname]','$_POST[lastname]','$_POST[email]','$_POST[phone]','$_POST[remark]','$_POST[people]','$_POST[date_]','$_POST[time_]')";
+
+if(!mysqli_query($con, $sql))
+{
+die('Error:'.mysqli_error($con));
+}
+else
+{
+echo "";
+}
+
+
+
+
+$last="SELECT* FROM bookings ORDER BY BookingNumber DESC LIMIT 1";
+
+$result = mysqli_query($con, $last);
+echo "<br>";
+echo "<b>Your reservation is confirmed!</b><br><br>Thank you for being with <i>Halmonita Rice Grande</i><br><br><hr>";
+
+while($row = mysqli_fetch_array($result))
+{
+echo "<table>";
+echo "<tr>";
+echo "<td>"."Reservation Number"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['BookingNumber']."</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>"."Name"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['CivilState']." ".$row['FirstName']." ".$row['LastName']."</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>"."Email"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['Email']."</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>"."Phone Number"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['PhoneNumber']."</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>"."Date"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['Date']."</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>"."Time"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['Time']."</td>";
+echo "</tr>";
+echo "<tr>";
+echo "<td>"."Remarks"."</td>";
+echo "<td>".":"."</td>";
+echo "<td>".$row['Remark']."</td>";
+echo "</tr>";
+echo "</table>";
+}
+
+
+mysqli_close($con);
+
+?>
+</body>
+</html>

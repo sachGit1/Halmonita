@@ -1,0 +1,360 @@
+/* Style for navigation bar */
+html
+{
+scroll-behavior:smooth;
+}
+
+#navbar {
+    position: fixed;
+    top: -100px;
+    left:0;
+    width:100%;
+    height:8%;
+    background-color:rgba(107,107,107,0.7);
+    transition: top 0.4s;
+    z-index:2;
+}
+
+#navbar ul {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+#navbar a {
+    text-decoration: none;
+    color:white;
+    font-family:Arial;
+}
+
+#navbar li{
+    line-height:50px;
+    padding-right:30px;
+    padding-left:30px;
+    display:inline;
+}
+
+/* Style for active navigation link */
+#navbar a.active {
+    color: black; /* Change to the desired color for the active link */
+}
+
+/* Style for sections */
+section {
+    height: 100vh;
+    padding: 0px;
+}
+
+
+/* Style each section as needed */
+section.home1
+{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-image:url("little-owl-west-village-U.jpeg");
+background-size:cover;
+transition:background-image 2s ease-in-out;
+animation: changeBackground 10s infinite alternate;
+}
+
+@keyframes changeBackground{
+0%{
+background-image:url('little-owl-west-village-U.jpeg');}
+50%{
+background-image:url('grilled-sirloin-steak-rustic-wood-table-generated-by-ai_188544-22501.jpg');}
+100%{
+background-image:url('Goodmeasure_interior_1.jpg');}
+}
+
+section.about1
+{
+height: 100vh;
+display: flex;
+font-size: 24px;
+background-color:beige;
+background-size:cover;
+}
+
+section.gal1
+{
+height: 100vh;
+display: flex;
+font-size: 24px;
+justify-content:center;
+align-items:center;
+/*background-image:url("p3175630392-4.jpg");
+background-size:cover;*/
+background-color:beige;
+
+}
+
+section.menu1
+{
+height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-color:beige;
+}
+
+section.menu2
+{
+height:100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-color:beige;
+}
+
+
+/*Home Page*/
+
+div.home1
+{
+height:11%;
+width:100%;
+position:absolute;
+top:0px;
+text-align:left;
+line-height:65px;
+font-family:Arial,"sans-serif";
+padding-left:18px;
+padding-top:12px;
+}
+
+#menuBar{background-color:#818380;}
+a.home{padding-left:25px; font-family:Candara;}
+a.home:link{text-decoration:none; color:black;}
+a.home:visited{text-decoration:none; color:black;}
+a.home:hover{text-decoration:none; color:white;}
+a.home:active{text-decoration:none; color:black;}
+
+
+/*Menu page*/
+div.pic2
+{
+height:50%;
+width:100%;
+text-align:center;
+position:absolute;
+//padding-top:10%;
+z-index:1;
+}
+
+img.pic1
+{
+height:70%;
+width:100%;
+z-index:0;
+//padding-top:10%;}
+
+#pic{background-color:rgb(251,234,205,0.5);}
+
+div.menu
+{
+height:20%;
+width:100%;
+background-color:yellow;
+padding-top:20px;
+}
+
+/*as testing*/
+.navbar1
+{
+margin-top:2%;
+//position:absolute;
+background-color:white;
+justify-content: center;
+display:flex;
+padding:1px;
+width:100%;
+}
+
+.nav-btn
+{
+padding:10px 20px;
+margin:0 10px;
+text-align:center;
+}
+
+//change color of navigation button with its state
+
+.nav-btn:link{
+background-color:red;
+}
+
+.nav-btn:visited{
+background-color:red;
+}
+
+.nav-btn:hover{
+background-color:green;
+}
+
+.nav-btn:active{
+background-color:red;
+}
+
+.content1
+{
+margin-top:60%;
+position:absolute;
+background-color:beige;
+padding:1cm; //padding within text and border of the paragraph
+
+}
+
+section.menu2
+{
+max-height:600px;
+overflow-y:auto;
+display: flex;
+//justify-content: center;
+//align-items: center;
+font-size: 24px;
+background-color:beige;
+background-size:cover;
+padding-right:0px;
+padding-left:0px;
+}
+
+p.hide{
+display:none;
+}
+
+.img1{
+display:block;
+width:35%;
+height:auto;
+float:left;
+
+margin-right:2%;
+margin-top:2px;
+}
+
+p.cursive{
+font-family:"Segoe Script";
+font-size:25px;
+border-radius:10%;
+margin-right:3%;
+margin-top:3%;
+margin-bottom:2%;
+text-align:center;
+}
+
+p.toMenu{
+font-family:Candara;
+margin-right:8%;
+margin-left:8%;
+}
+
+div.button{
+background-color:white;
+width:10%;
+height:6%;
+text-align:center;
+padding:6px;
+border-radius:10px;
+}
+
+a.button:link{
+text-decoration:none;
+color:black;
+font-family:Candara;
+}
+div.button:hover{
+background-color:red;
+text-decoration:none;
+color:black;
+font-family:Candara;
+}
+
+
+div.main{
+width:100%;
+height:50%;
+background-color:rgb(255,206,85);
+opacity:0.5;
+margin-top:5%;
+}
+
+
+p.logo{
+font-family:Candara;
+color:black;
+margin-top:-2%;
+font-size:15px;
+}
+
+
+table.gall{
+margin-top:65px;
+/*margin-left:80px;*/
+margin-bottom:0px;
+height:auto;
+width:80%;}
+
+table.gall1{
+margin-top:-5px;
+/*margin-left:80px;*/
+margin-bottom:0px;
+height:auto;
+width:80%;}
+
+td.divCell
+{
+background-color:rgb(128,128,128,0.5);
+width:100%;
+height:150px;
+}
+
+p.table{
+font-family:Candara;
+text-align:center;}
+
+div.bookBtn{
+width:160px;
+height:70px;
+background-color:white;
+bottom:30px;
+right:30px;
+position:fixed;
+z-index:999;
+border-radius:10px;
+color:black;
+text-align:center;
+padding-top:7px;
+}
+
+a.bookTable{
+font-family:Candara;
+justify-content:center;
+text-decoration:none;
+color:black;}
+
+p.final{
+font-family:Arial;
+font-size:17px;
+}
+
+td.enlarge:hover{
+transform:scale(2);}
+
+td.final{
+padding-left:150px;
+}
+
+table.opening{
+font-family:Arial;
+font-size:17px;}
+
+td.social{
+text-align:center;}
+
+.image:hover{
+transform:scale(1.5);}

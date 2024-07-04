@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Confirm and pay</title>
+<link rel="stylesheet" href="gift_styles_02.css">
+</head>
+<body align = "center" class="style">
+
+<h6 >CHECKOUT</h6>
+
+<div class="main">
+<div class="gift1"><h2>Easy to give. Fun to receive.</h2></div>
+<?php
+$exp = mktime(0,0,0,date("m")+3,date("d"),date("Y"));
+echo "Expiration Date  is ".date("Y/m/d", $exp);
+?>
+
+
+<h3>Your Contact Details</h3>
+<form action = "http://localhost/''test''.php" method = "post">
+<input type="radio" name="gender" value = "Mr." id="gender" required/>Mr.
+<input type="radio" name="gender" value = "Ms." id="gender"/>Ms.
+<br/><br/>
+<input type="text" name="firstname" id="firstname" placeholder="First Name" required/><br/><br/>
+<input type="text" name="lastname" id="lastname" placeholder="Last Name" required/><br/><br/>
+<input type="email" name="email" id="email" placeholder="Email" required/><br/><br/>
+<input type="tel" name="phoneno" id="phoneno" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{7}" required/><br/>
+
+<h3>Choose a payment method</h3>
+
+<input type = "radio" name = "payment" value = "Pay in Credit Cards/Debit Cards" id = "payment" required/>Pay in Credit Cards/Debit Cards<br>
+<input type = "radio" name = "payment" value = "Pay in Cash" id = "payment">Pay in Cash<br>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const price = urlParams.get('price');
+
+if (price) {
+  document.write(`<p>Total: Rs.${price}</p>`);
+} else {
+  document.write('<p>Price not found.</p>');
+}
+</script>
+
+<input type = "checkbox" name = "offers" value = "offers" required/>
+Don't miss out on the latest events, promotions and other offers from Halmonita Rice Grande<br><br>
+<input type = "submit" value = "Confirm & Pay">
+</form>
+
+<br>
+</div>
+<hr>
+By buying a product you agree to our <a href = "http://localhost/terms.html">Terms & Conditions.</a>
+<hr>
+
+</body>
+</html>

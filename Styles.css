@@ -1,0 +1,150 @@
+
+body 
+{
+margin: 0;
+padding: 0;
+
+font-size:170%;
+}
+
+header 
+{
+position: fixed;
+top: -60px;       /* Initially hidden above the viewport */
+left: 0;
+right: 0;
+background-color:rgba(107,107,107,0.7);
+color: white;
+padding: 20px 0;
+text-align: center;
+transition: top 0.6s ease;       /* Add animation */
+}
+
+
+/*----------------------------------------*/
+           /*Navigation Bar*/
+/*----------------------------------------*/
+
+nav ul 
+{
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+nav ul li 
+{
+display: inline;
+margin: 0 20px;
+text-transform:uppercase;
+}
+
+nav a 
+{
+color: white;
+text-decoration: none;
+}
+
+.nav-link.active
+{
+color:red;
+}
+
+
+/*----------------------------------------*/
+          /*Section Styling*/
+/*----------------------------------------*/
+
+section.home1
+{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-image:url("little-owl-west-village-U.jpeg");
+background-size:cover;
+}
+
+section.about1
+{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-image:url("huge_1.jpg");
+background-size:cover;
+}
+
+section.gal1
+{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-image:url("p3175630392-4.jpg");
+background-size:cover;
+}
+
+section.menu1
+{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-image:url("p3175630392-4.jpg");
+background-size:cover;
+}
+
+section.contact1
+{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 24px;
+background-image:url("little-owl-west-village-U.jpeg");
+background-size:cover;
+}
+
+/*----------------------------------------*/
+          /*Home Page Stylings*/
+/*----------------------------------------*/
+
+div.home1
+{
+height:8%;
+width:100%;
+position:absolute;
+top:0px;
+text-align:center;
+line-height:55px;
+/*text-transform:uppercase;*/
+font-size:"2";
+font-family:Arial,"sans-serif";
+}
+
+#menuBar{background-color:rgb(251,234,205,0.9);}
+
+p.menuBar
+{
+color:white;
+text-align:center;
+text-decoration:none;
+}
+
+a:link{text-decoration:none; color:black;}
+a:visited{text-decoration:none; color:black;}
+a:hover{text-decoration:none; color:white;}
+a:active{text-decoration:none; color:black;}
+
+div.home2
+{
+height:50%;
+width:100%;
+}
+
+#top{background-color:rgba(255,255,255,0.5);}
